@@ -49,6 +49,15 @@ router.post("/createAccount", async (request, response) => {
     });
 });
 
+router.post('/login',async(request,response)=>{});
+
+router.post('/verify',async(request,response)=>{
+  //Get passcode and email
+  //
+
+
+});
+
 const randomInteger = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 };
