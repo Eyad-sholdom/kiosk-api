@@ -6,6 +6,9 @@ const app = express();
 app.use(bodyParser.urlencoded());
 app.use(bodyParser.json());
 
+const accountsRoute = require("./controllers/accounts");
+app.use("/api/accounts", accountsRoute);
+//   api/accounts/sayHello
 const port = 5090;
 const url =
   "mongodb+srv://kiost_user:f5FlYHZCPvL5cdaO@cluster0.zv9t4.mongodb.net/kiosk_db?retryWrites=true&w=majority";
